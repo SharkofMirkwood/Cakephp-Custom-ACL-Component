@@ -23,7 +23,7 @@ class CustomAclComponent extends Component {
         $this->_controller = $controller;
     }
 
-    /**
+	/**
 	 * Constructor.
 	 */
 	public function __construct() {
