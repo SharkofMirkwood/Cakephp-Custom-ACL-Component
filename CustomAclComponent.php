@@ -106,7 +106,7 @@ class CustomAclComponent extends Component {
     private function checkPermission($user_id, $aco_id) {
     	//Assume aco and aro are integers for the id fields of each one.
     	//First check if any rules exist for the user:
-    	if ($this->checkUserPermission($aco_id, $user_id) != 0)
+    	if ($this->checkUserPermission($user_id, $aco_id) != 0)
     		return $this->checkUserPermission($user_id, $aco_id);
 
     	//Otherwise check all the user's roles (permission of -1 always has priority):
